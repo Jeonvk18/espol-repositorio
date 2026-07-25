@@ -1,0 +1,405 @@
+/*======================================
+            GOOGLE FONTS
+======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*======================================
+            VARIABLES
+======================================*/
+
+:root{
+
+--negro:#050505;
+--azul1:#071A3D;
+--azul2:#0B2447;
+--azul3:#1E90FF;
+--azul4:#00BFFF;
+--blanco:#ffffff;
+--gris:#C8D3E3;
+
+--glass:rgba(255,255,255,.08);
+
+}
+
+/*======================================
+            GENERAL
+======================================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(180deg,#050505,#071A3D,#050505);
+
+color:var(--blanco);
+
+overflow-x:hidden;
+
+}
+
+img{
+
+width:100%;
+display:block;
+
+}
+
+section{
+
+padding:100px 10%;
+
+}
+
+h1,h2,h3{
+
+font-family:'Bebas Neue',sans-serif;
+
+letter-spacing:2px;
+
+}
+
+/*======================================
+            NAVBAR
+======================================*/
+
+header{
+
+position:fixed;
+
+width:100%;
+
+top:0;
+
+left:0;
+
+z-index:999;
+
+backdrop-filter:blur(18px);
+
+background:rgba(0,0,0,.45);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+nav{
+
+max-width:1300px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+}
+
+nav h2{
+
+font-size:35px;
+
+color:var(--azul4);
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+transition:.35s;
+
+font-weight:500;
+
+}
+
+nav a:hover{
+
+color:var(--azul4);
+
+text-shadow:0 0 15px var(--azul4);
+
+}
+
+/*======================================
+            HERO
+======================================*/
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(7,26,61,.85)),
+url("img/trueno-banner.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.contenido{
+
+max-width:850px;
+
+z-index:10;
+
+}
+
+.tag{
+
+display:inline-block;
+
+padding:10px 25px;
+
+border-radius:30px;
+
+background:rgba(0,191,255,.12);
+
+border:1px solid rgba(0,191,255,.3);
+
+margin-bottom:25px;
+
+backdrop-filter:blur(15px);
+
+}
+
+.hero h1{
+
+font-size:120px;
+
+line-height:1;
+
+color:white;
+
+text-shadow:
+
+0 0 15px #00BFFF,
+
+0 0 40px #1E90FF;
+
+}
+
+.hero h3{
+
+font-size:38px;
+
+margin:20px 0;
+
+color:var(--azul4);
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#d9e7ff;
+
+}
+
+/*======================================
+            BOTONES
+======================================*/
+
+.botones{
+
+margin-top:45px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.botones a{
+
+padding:15px 35px;
+
+text-decoration:none;
+
+color:white;
+
+border-radius:50px;
+
+background:var(--glass);
+
+border:1px solid rgba(255,255,255,.1);
+
+backdrop-filter:blur(18px);
+
+transition:.4s;
+
+}
+
+.botones a:hover{
+
+background:var(--azul3);
+
+transform:translateY(-6px);
+
+box-shadow:0 0 25px var(--azul4);
+
+}
+
+.botones i{
+
+margin-right:10px;
+
+}
+
+/*======================================
+            ORIGEN
+======================================*/
+
+.container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.imagen img{
+
+border-radius:25px;
+
+box-shadow:0 0 40px rgba(0,191,255,.3);
+
+}
+
+.texto h2{
+
+font-size:60px;
+
+color:var(--azul4);
+
+margin-bottom:20px;
+
+}
+
+.texto p{
+
+line-height:2;
+
+margin-bottom:20px;
+
+color:#d4e2ff;
+
+}
+
+/*======================================
+            CARRERA
+======================================*/
+
+.carrera{
+
+text-align:center;
+
+}
+
+.carrera h2{
+
+font-size:65px;
+
+margin-bottom:60px;
+
+color:var(--azul4);
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border-radius:25px;
+
+padding:40px;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(0,191,255,.35);
+
+}
+
+.card i{
+
+font-size:55px;
+
+color:var(--azul4);
+
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+font-size:34px;
+
+margin-bottom:15px;
+
+}
